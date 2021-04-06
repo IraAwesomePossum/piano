@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(247, 245, 246);
+  background: radial-gradient(
+    circle,
+    rgba(247, 245, 246, 1) 0%,
+    rgba(210, 220, 236, 1) 100%
+  );
+}
+
+#keyboard {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.w {
+  width: 9%;
+  min-width: 60px;
+  height: 70%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+}
+
+.b {
+  background-color: black;
+  height: 45%;
+  width: 7%;
+  margin-left: -4%;
+  margin-right: -4%;
+  z-index: 2;
+}
+
+.set {
+  margin: 10% auto;
+}
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
